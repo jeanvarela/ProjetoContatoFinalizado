@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_novo"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/novo" />
+        <item
+            android:id="@+id/nav_sincronizar"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/sincronizar" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_sair"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Sair" />
+        </menu>
+    </item>
+
+</menu>

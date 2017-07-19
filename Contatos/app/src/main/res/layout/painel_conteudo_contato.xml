@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_cadastro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0px"
+    android:paddingLeft="5px"
+    android:paddingRight="5px"
+    android:paddingTop="5px"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".visao.contato.ContatoActivity"
+    tools:showIn="@layout/activity_cadastro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                        android:id="@+id/labelNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nome"/>
+
+            <android.support.design.widget.TextInputLayout
+                            android:id="@+id/txtNomeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/labelNome">
+
+                <EditText
+                    android:id="@+id/txtNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                    android:id="@+id/labelTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtNomeLayout"
+                    android:text="@string/telefone"/>
+
+            <RelativeLayout
+                android:id="@+id/layoutTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labelTelefone">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtTelefoneLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+
+                    <EditText
+                        android:id="@+id/txtTelefone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/labelLocalizacao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutTelefone"
+                    android:text="@string/localizacao"/>
+
+            <RelativeLayout
+                        android:id="@+id/layoutLocalizacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/labelLocalizacao">
+
+                <android.support.design.widget.TextInputLayout
+                                android:id="@+id/txtLocalizacaoLayout"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toLeftOf="@+id/btn_localizar">
+
+                    <EditText
+                                android:id="@+id/txtLocalizacao"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageButton
+                            android:text="Enviar"
+                            android:id="@+id/btn_localizar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:onClick="abrirMapa"
+                            android:src="@mipmap/mapa"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <TextView
+                        android:id="@+id/labelAlertaLocalizacaoNaoSelecionada"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutLocalizacao"
+                        android:textColor="@color/colorAlerta"
+                        android:visibility="invisible"
+                        android:text="@string/localizacaoContatoNaoSelecionadaNoMapa"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cadastrar"
+            android:clickable="true"
+            android:id="@+id/btnCadastrarAtualizar"
+            android:onClick="cadastrarContato"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

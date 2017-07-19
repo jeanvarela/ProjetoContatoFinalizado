@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Contatos</string>
+    <string name="login">Logar</string>
+    <string name="senha">Senha</string>
+    <string name="naoCadastrado">Não é cadastrado?</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="senhaConfirmacao">Senha Confirmação</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="ok">OK</string>
+    <string name="telefone">Telefone</string>
+    <string name="localizacao">Localização</string>
+    <string name="contato">Contato</string>
+    <string name="novo">Novo</string>
+    <string name="novoContato">Novo Contato</string>
+    <string name="acao_pesquisar">Pesquisar Contato</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="atualizarContato">Atualizar Contato</string>
+    <string name="erro">Erro</string>
+    <string name="sincronizar">Sincronizar</string>
+
+    <string name="nomeNaoPreenchido">O nome deve ser preenchido</string>
+    <string name="emailNaoPreenchido">O email deve ser preenchido</string>
+    <string name="emailInvalido">O email não é válido</string>
+    <string name="telefoneNaoPreenchido">O número do telefone deve ser preenchido</string>
+    <string name="localizacaoNaoPreenchida">A localização deve ser informada</string>
+    <string name="telefoneInvalido">O número de telefone inválido</string>
+
+    <string name="senhaNaoPreenchida">A senha deve ser preenchida</string>
+    <string name="senhaConfirmacaoNaoPreenchida">A senha de confirmação deve ser preenchida</string>
+    <string name="senhaDiferenteSenhaConfirmacao">A senha e a senha de confirmação devem ser iguais</string>
+
+    <string name="atualizacaoRealizadaComSucesso">Cadastro Atualizado com sucesso</string>
+    <string name="cadastroRealizadoComSucesso">Cadastro Realizado com sucesso</string>
+    <string name="title_activity_principal">Lista de Contatos</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_novo_contato">Novo Contato</string>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="title_activity_atualuizar_contato">Atualizar Contato</string>
+
+    <string name="acao_novo">Novo</string>
+    <string name="acao_info">Info</string>
+    <string name="hint_busca">Procurar Contato</string>
+    <string name="title_activity_mapa">Map</string>
+
+    <string name="semConexao">Aparelho não conectado a internet. Para realizar a operação é necessário que o aparelho possua conexão com a internet.</string>
+
+    <string name="emailExistente">E-mail já cadastrado.</string>
+
+    <string name="loginSemSucesso">E-mail e/ou Senha inválidos.</string>
+
+    <string name="selecaoLocalizacao">Seleção localização</string>
+    <string name="localizacaoNaoSelecionada">Selecione a localização do contato</string>
+    <string name="nomeContatoNaoPreenchido">O nome do contato deve ser preenchido</string>
+    <string name="numeroTelefoneContatoNaoPreenchido">O número do telefone do contato deve ser preenchido</string>
+    <string name="numeroTelefoneContatoInvalido">Número telefone inválido</string>
+    <string name="localizacaoContatoNaoPreenchida">A localização do contato não foi preenchida.</string>
+
+    <string name="localizacaoContatoNaoSelecionadaNoMapa">A localização do contato não foi selecionada no mapa.</string>
+
+</resources>
