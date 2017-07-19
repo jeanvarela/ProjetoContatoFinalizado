@@ -1,0 +1,54 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:h="http://java.sun.com/jsf/html"
+                template="../../../WEB-INF/templates/template.xhtml">
+
+     <ui:define name="head-end">
+        <style type="text/css">
+            .ui-datatable .ui-datatable-header {
+                text-align: right !important;
+            }
+        </style>
+    </ui:define>
+
+    <ui:define name="title">
+        Contatos
+    </ui:define>
+
+    <ui:define name="body">
+        <h:form>
+            <div class="box box-primary">
+                <div class="box-header with-border" style="padding: 0px !important;">
+                    <p:dataTable value="#{contatoLista.listaContatos}" var="contato" cellspacing="0"
+								 cellpadding="2" paginator="true" rows="5" paginatorPosition="bottom"
+								  emptyMessage="Nenhum Contato Encontrado" id="tabelaContatos"
+								  binding="#{contatoLista.dataTable}">
+
+                        <f:facet name="header">
+                            <p:inputText placeholder="Pesquisar" id="inptId" value="#{contatoLista.criterioBusca}"/>
+                            <p:spacer height="5"/>
+                            <p:commandButton id="brFind" value="Buscar" process="@form" update="@form"
+                                             action="#{contatoLista.procurarContato}"  styleClass="btn-flat"/>
+                        </f:facet>
+
+                        <p:column headerText="Nome"  style="text-align: center">
+                           <h:outputText value="#{contato.nome}"/>
+                        </p:column>
+                        <p:column headerText="Telefone" style="text-align: center">                           
+                           <h:outputText value="#{contato.telefone}" /> 
+                        </p:column>
+                        <p:column style="width:5%;text-align: center">
+				           
+				      		<p:button icon="ui-icon-pencil" title="Editar" outcome="/pages/cadastro/contato/cadastroContato">
+								   <f:param name="codigoContato" value = "#{contato.codigo}" /> 
+							</p:button>	
+				        </p:column>
+                    </p:dataTable>
+                </div>
+            </div>
+        </h:form>
+    </ui:define>
+
+</ui:composition>
